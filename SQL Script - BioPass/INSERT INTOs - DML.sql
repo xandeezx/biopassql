@@ -494,3 +494,159 @@ insert into cliente_cria_carrinho values
 (18, 18),
 (19, 19),
 (20, 20);
+
+
+## INSERT INTO Tabela ItemCarrinho
+
+insert into itemcarrinho values
+(1, 1, 59.99, 1),
+(2, 2, 39.90, 2),
+(3, 3, 24.50, 3),
+(4, 4, 19.80, 1),
+(5, 5, 29.90, 2),
+(6, 6, 199.00, 1),
+(7, 7, 9.90, 4),
+(8, 8, 49.90, 1),
+(9, 9, 129.90, 2),
+(10, 10, 69.90, 1),
+(11, 11, 149.00, 1),
+(12, 12, 21.50, 3),
+(13, 13, 89.99, 2),
+(14, 14, 15.90, 5),
+(15, 15, 24.90, 1),
+(16, 16, 29.90, 2),
+(17, 17, 59.90, 1),
+(18, 18, 359.00, 1),
+(19, 19, 18.90, 4),
+(20, 20, 39.80, 2);
+
+
+## INSERT INTO Tabela Pedido
+
+insert into pedido values
+(default, 5,  9.90,  69.89, 'Finalizado', 3),
+(default, 3,  2.50,  39.60, 'Finalizado', 7),
+(default, 12, 12.99, 259.80, 'Finalizado', 9),
+(default, 4,  4.25,  64.50, 'Finalizado', 12),
+(default, 7,  7.80,  59.60, 'Finalizado', 16),
+(default, 2,  9.99,  79.60, 'Finalizado', 20),
+(default, 6, 10.00,  89.40, 'Finalizado', 21),
+(default, 8,  8.50,  68.00, 'Finalizado', 22),
+(default, 5, 11.25,  71.25, 'Finalizado', 23),
+(default, 9,  7.75, 101.25, 'Finalizado', 24),
+(default, 3,  6.00,  18.00, 'Finalizado', 25),
+(default, 4,  5.50,  27.50, 'Finalizado', 26),
+(default, 7, 12.00,  84.00, 'Finalizado', 27),
+(default, 2,  3.90,  46.80, 'Finalizado', 28),
+(default, 5,  6.50,  32.50, 'Finalizado', 29),
+(default, 8, 10.20,  81.60, 'Finalizado', 30),
+(default, 3,  4.75,  14.25, 'Finalizado', 31),
+(default, 6,  9.00,  54.00, 'Finalizado', 32),
+(default, 7,  8.80,  61.60, 'Finalizado', 33),
+(default, 4,  5.20,  20.80, 'Finalizado', 34),
+(default, 5,  7.40,  37.00, 'Finalizado', 35),
+(default, 2,  3.30,   6.60, 'Finalizado', 36),
+(default, 3,  5.00,  25.00, 'Pendente', 37),
+(default, 5,  7.50, 102.50, 'Cancelado', 38),
+(default, 2, 10.00,  59.90, 'Pendente', 39),
+(default, 4,  3.00,  12.00, 'Cancelado', 40);
+
+
+## INSERT INTO Tabela FormaPag
+
+insert into FormaPag values
+(default, 'Cartão de Crédito', 69.89, 1,  1),
+(default, 'Boleto Bancário', 39.60, 1,  2),
+(default, 'Cartão de Débito', 259.80,1,  3),
+(default, 'Cartão de Crédito', 64.50, 2,  4),
+(default, 'Pix', 59.60, 1,  5),
+(default, 'Cartão de Débito', 79.60, 1,  6),
+(default, 'Cartão de Crédito', 89.40, 3,  7),
+(default, 'Boleto Bancário', 68.00, 1,  8),
+(default, 'Pix', 71.25, 1,  9),
+(default, 'Cartão de Débito', 101.25,2, 10),
+(default, 'Cartão de Crédito', 18.00, 1, 11),
+(default, 'Pix', 27.50, 1, 12),
+(default, 'Boleto Bancário', 84.00, 1, 13),
+(default, 'Cartão de Débito', 46.80, 1, 14),
+(default, 'Cartão de Crédito', 32.50, 2, 15),
+(default, 'Pix', 81.60, 1, 16),
+(default, 'Cartão de Débito', 14.25, 1, 17),
+(default, 'Cartão de Crédito', 54.00, 3, 18),
+(default, 'Boleto Bancário', 61.60, 1, 19),
+(default, 'Pix', 20.80, 1, 20);
+
+
+## INSERT INTO Tabela Feedback
+
+insert into feedback values
+(default, '2025-07-01 09:30:00', 'Ótima experiência, produto conforme descrito.', 5, 1, 1, 1),
+(default, '2025-07-01 10:15:00', 'Entrega rápida, qualidade excelente.', 5, 2, 2, 2),
+(default, '2025-07-01 11:00:00', 'Produto sustentável e muito resistente.', 4, 3, 3, 3),
+(default, '2025-07-01 11:45:00', 'Gostei do material, mas a embalagem veio amassada.', 3, 4, 4, 4),
+(default, '2025-07-01 12:30:00', 'Preço justo e entrega pontual.', 5, 5, 5, 5),
+(default, '2025-07-01 13:15:00', 'Gostei, mas poderia vir em refil maior.', 4, 6, 6, 6),
+(default, '2025-07-01 14:00:00', 'Design atraente, recomendo a amigos.', 5, 7, 7, 7),
+(default, '2025-07-01 14:45:00', 'Durabilidade incrível, satisfeito.', 5, 8, 8, 8),
+(default, '2025-07-01 15:30:00', 'Bom produto, mas frete caro.', 3, 9, 9, 9),
+(default, '2025-07-01 16:15:00', 'Fácil de usar e ecologicamente correto.', 5, 10, 10, 10),
+(default, '2025-07-01 17:00:00', 'Meu pet adorou, super confortável.', 5, 11, 11, 11),
+(default, '2025-07-01 17:45:00', 'Sabor ótimo, sem conservantes.', 5, 12, 12, 12),
+(default, '2025-07-01 18:30:00', 'Tecido macio e de excelente qualidade.', 5, 13, 13, 13),
+(default, '2025-07-01 19:15:00', 'Limpeza eficaz, perfume agradável.', 4, 14, 14, 14),
+(default, '2025-07-01 20:00:00', 'Textura suave, recomendo.', 5, 15, 15, 15),
+(default, '2025-07-01 20:45:00', 'Caderno resistente e layout criativo.', 5, 16, 16, 16),
+(default, '2025-07-01 21:30:00', 'Fralda prática e lavável várias vezes.', 4, 17, 17, 17),
+(default, '2025-07-01 22:15:00', 'Banco bonito, entrega atrasada.', 3, 18, 18, 18),
+(default, '2025-07-02 09:00:00', 'Café saboroso, embalado com cuidado.', 5, 19, 19, 19),
+(default, '2025-07-02 09:45:00', 'Ótimo refill, economiza plástico.', 5, 20, 20, 20);
+
+
+## INSERT INTO Tabela ConteudoEducativo
+
+insert into conteudoeducativo values
+(default, 'Reduza o Plástico', '5 formas simples de reduzir o uso de plástico no dia a dia.', 'https://biopass.com.br/conteudo/1', '2025-06-15', 'Dica'),
+(default, 'Embalagens e Meio Ambiente', 'Impacto ambiental das embalagens descartáveis no Brasil.', 'https://biopass.com.br/conteudo/2', '2025-06-16', 'Artigo'),
+(default, 'Separação de Resíduos', 'Como separar corretamente o lixo reciclável.', 'https://biopass.com.br/conteudo/3', '2025-06-17', 'Vídeo'),
+(default, 'Sacolas Reutilizáveis', 'Use sacolas reutilizáveis: pequenas atitudes, grande impacto.', 'https://biopass.com.br/conteudo/4', '2025-06-18', 'Dica'),
+(default, 'Fast Fashion e Consumo', 'A importância do consumo consciente na era do fast fashion.', 'https://biopass.com.br/conteudo/5', '2025-06-19', 'Artigo'),
+(default, 'Vegano vs Cruelty-Free', 'Diferença entre produtos veganos e cruelty-free.', 'https://biopass.com.br/conteudo/6', '2025-06-20', 'Vídeo'),
+(default, 'Reutilização Doméstica', 'Como reutilizar potes e embalagens em casa.', 'https://biopass.com.br/conteudo/7', '2025-06-21', 'Dica'),
+(default, 'Economia Circular', 'O que é economia circular e como ela funciona?', 'https://biopass.com.br/conteudo/8', '2025-06-22', 'Artigo'),
+(default, 'Compostagem em Casa', 'Compostagem doméstica: o que você precisa saber.', 'https://biopass.com.br/conteudo/9', '2025-06-23', 'Vídeo'),
+(default, 'Consumo Responsável', 'Evite desperdício: compre apenas o necessário.', 'https://biopass.com.br/conteudo/10', '2025-06-24', 'Dica'),
+(default, 'Transporte e Carbono', 'O impacto do transporte na emissão de carbono.', 'https://biopass.com.br/conteudo/11', '2025-06-25', 'Artigo'),
+(default, 'Limpeza Ecológica', 'Como fazer produtos de limpeza ecológicos em casa.', 'https://biopass.com.br/conteudo/12', '2025-06-26', 'Vídeo'),
+(default, 'Papel-Toalha x Pano', 'Troque o papel-toalha por panos reutilizáveis.', 'https://biopass.com.br/conteudo/13', '2025-06-27', 'Dica'),
+(default, 'Liderança Sustentável', 'Empresas brasileiras que estão liderando a sustentabilidade.', 'https://biopass.com.br/conteudo/14', '2025-06-28', 'Artigo'),
+(default, 'Horta Urbana', 'Passo a passo para montar uma horta urbana.', 'https://biopass.com.br/conteudo/15', '2025-06-29', 'Vídeo'),
+(default, 'Economize Água', 'Economize água ao escovar os dentes e lavar a louça.', 'https://biopass.com.br/conteudo/16', '2025-06-30', 'Dica'),
+(default, 'Consumo e Biodiversidade', 'Como o consumo impacta a biodiversidade do planeta.', 'https://biopass.com.br/conteudo/17', '2025-07-01', 'Artigo'),
+(default, 'Alternativas ao Plástico', 'Conheça alternativas sustentáveis ao plástico.', 'https://biopass.com.br/conteudo/18', '2025-07-02', 'Vídeo'),
+(default, 'Garrafas Reutilizáveis', 'Utilize garrafas reutilizáveis no lugar de descartáveis.', 'https://biopass.com.br/conteudo/19', '2025-07-03', 'Dica'),
+(default, 'Gestão de Resíduos', 'Desafios e soluções para a gestão de resíduos sólidos no Brasil.', 'https://biopass.com.br/conteudo/20', '2025-07-04', 'Artigo');
+
+
+## INSERT INTO Tabela UsuarioConteudo
+
+insert into usuarioconteudo values
+(1, 1, null, '2025-07-01 09:00:00', 'Aceito'),
+(2, 2, null, '2025-07-01 09:10:00', 'Aceito'),
+(3, 3, null, '2025-07-01 09:20:00', 'Aceito'),
+(4, 4, null, '2025-07-01 09:30:00', 'Aceito'),
+(5, 5, null, '2025-07-01 09:40:00', 'Aceito'),
+(6, 6, null, '2025-07-01 09:50:00', 'Aceito'),
+(7, 7, null, '2025-07-01 10:00:00', 'Aceito'),
+(8, 8, null, '2025-07-01 10:10:00', 'Aceito'),
+(9, 9, null, '2025-07-01 10:20:00', 'Aceito'),
+(10, 10, null, '2025-07-01 10:30:00', 'Aceito'),
+(11, 11, null, '2025-07-01 10:40:00', 'Aceito'),
+(12, 12, null, '2025-07-01 10:50:00', 'Aceito'),
+(13, 13, 'Conteúdo fora do escopo educativo.', '2025-07-01 11:00:00', 'Rejeitado'),
+(14, 14, 'Link inválido ou inacessível.', '2025-07-01 11:10:00', 'Rejeitado'),
+(15, 15, 'Informação não confiável, faltam fontes.', '2025-07-01 11:20:00', 'Rejeitado'),
+(16, 16, 'Conteúdo duplicado de outro já publicado.', '2025-07-01 11:30:00', 'Rejeitado'),
+(17, 17, 'Texto ofensivo ou inapropriado.', '2025-07-01 11:40:00', 'Rejeitado'),
+(18, 18, null, '2025-07-01 11:50:00', 'Aceito'),
+(19, 19, null, '2025-07-01 12:00:00', 'Aceito'),
+(20, 20, null, '2025-07-01 12:10:00', 'Aceito');
