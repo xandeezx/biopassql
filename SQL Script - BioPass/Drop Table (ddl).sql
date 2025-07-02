@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS usuarioconteudo;
 DROP TABLE IF EXISTS conteudoeducativo;
-DROP TABLE IF EXISTS feedback;
+DROP TABLE IF EXISTS avaliacao;
 DROP TABLE IF EXISTS formapag;
 DROP TABLE IF EXISTS pedido;
 DROP TABLE IF EXISTS itemcarrinho;
