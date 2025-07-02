@@ -1,13 +1,9 @@
 ALTER TABLE usuario ADD COLUMN dataNascimento DATE;
-
 ALTER TABLE usuario CHANGE telefone telefoneCelular VARCHAR(15);
-
 ALTER TABLE loja MODIFY COLUMN nome VARCHAR(150);
-
 ALTER TABLE formapag MODIFY COLUMN tipo VARCHAR(50);
-
 ALTER TABLE produto ADD COLUMN imagemURL VARCHAR(250);
-
 ALTER TABLE formapag ADD COLUMN cliente_id INT;
-
 ALTER TABLE loja DROP COLUMN descricao;
+ALTER TABLE usuario ADD COLUMN RG VARCHAR(14);
+ALTER TABLE feedback RENAME TO avaliacao;
