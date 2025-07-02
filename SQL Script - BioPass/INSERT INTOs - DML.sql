@@ -324,3 +324,173 @@ Os resíduos são compostados e usados como adubo para hortas locais.', 39),
 'Reuso de embalagens; Transparência ambiental.',
 'A EcoBio vende produtos de higiene com reuso de embalagens, rotulagem clara e compromisso com rastreabilidade ambiental em toda a cadeia.', 40);
 
+
+## INSERT INTO Tabela Produto
+
+insert into produto values
+(default, 'Vestido 100% algodão', 58, 59.99, 'Vestido ecológico feito 100% de algodão.', 21),
+(default, 'Kit Multiuso Biodegradável', 120, 39.90, 'Conjunto de panos e esponjas biodegradáveis para limpeza doméstica.', 22),
+(default, 'Cereal Orgânico 500g', 200, 24.50, 'Mistura de aveia, quinoa e chia, sem agrotóxicos.', 23),
+(default, 'Sabonete Vegano 3 un.', 150, 19.80, 'Sabonetes artesanais veganos com óleo de coco.', 24),
+(default, 'Batom Natural 4g', 80, 29.90, 'Batom vegano e livre de parabenos em embalagem reciclável.', 25),
+(default, 'Carregador Solar Portátil', 45, 199.00, 'Power bank movido a energia solar, sem emissões.', 26),
+(default, 'Escova de Dentes Bambu', 300, 9.90, 'Escova biodegradável feita com bambu sustentável.', 27),
+(default, 'Kit Shampoo e Condicionador Refil', 75, 49.90, 'Frascos refill de shampoo e condicionador ecológicos.', 28),
+(default, 'Mochila Reciclada 20L', 60, 129.90, 'Mochila produzida com tecido reaproveitado de garrafas PET.', 29),
+(default, 'Creme Hidratante Orgânico 200ml', 110, 69.90, 'Creme facial com ingredientes 100% orgânicos.', 30),
+(default, 'Caminha Pet Bamboo', 40, 149.00, 'Cama para pets feita com fibras de bambu duráveis.', 31),
+(default, 'Geleia Artesanal 300g', 90, 21.50, 'Geleia de frutas orgânicas, sem conservantes.', 32),
+(default, 'Vestido de Linho Natural', 30, 89.99, 'Peça artesanal feita com linho sustentável.', 33),
+(default, 'Detergente Ecológico 1L', 140, 15.90, 'Detergente biodegradável concentrado.', 34),
+(default, 'Sabonete Líquido Refrescante 250ml', 100, 24.90, 'Sabonete líquido natural com essência de hortelã.', 35),
+(default, 'Caderno Ecológico 100fls', 200, 29.90, 'Caderno com papel reciclado e capa de madeira certificada.', 36),
+(default, 'Fralda Reutilizável Tamanho M', 80, 59.90, 'Fralda de tecido orgânico, lavável e durável.', 37),
+(default, 'Banco de Madeira Reutilizada', 20, 359.00, 'Banco de praça feito com madeira de demolição.', 38),
+(default, 'Café Orgânico 250g', 150, 18.90, 'Café de origem agroecológica, torrado artesanalmente.', 39),
+(default, 'Sabonete em Barra Reutilizável 5 un.', 120, 39.80, 'Pacote com cinco sabonetes livres de plástico.', 40);
+
+
+## INSERT INTO Tabela Categoria
+
+insert into categoria values 
+(default, 'Moda Sustentável'),
+(default, 'Higiene e Beleza'),
+(default, 'Limpeza Ecológica'),
+(default, 'Alimentação Orgânica'),
+(default, 'Tecnologia Sustentável'),
+(default, 'Acessórios Sustentáveis'),
+(default, 'Pet Sustentável'),
+(default, 'Infantil e Bebê'),
+(default, 'Papelaria Ecológica'),
+(default, 'Móveis e Decoração');
+
+
+## INSERT INTO Tabela Produto_possui_Categoria
+
+insert into produto_possui_categoria values 
+(1, 1),
+(2, 3),
+(3, 4),
+(4, 2),
+(5, 2),
+(6, 5),
+(7, 2),
+(8, 2),
+(9, 6),
+(10, 2),
+(11, 7),
+(12, 4),
+(13, 1),
+(14, 3),
+(15, 2),
+(16, 9),
+(17, 8),
+(18, 10),
+(19, 4),
+(20, 2); 
+
+
+## INSERT INTO Tabela TipoSustentavel
+
+insert into tipo_sustentavel values 
+(default, 'Orgânico'),
+(default, 'Biodegradável'),
+(default, 'Reciclável'),
+(default, 'Vegano'),
+(default, 'Cruelty-Free'),
+(default, 'Sem Plástico'),
+(default, 'Reutilizável'),
+(default, 'Compostável'),
+(default, 'Matéria-prima Renovável'),
+(default, 'Energia Renovável');
+
+
+## INSERT INTO Tabela Produto_possui_TipoSustentavel
+
+insert into produto_possui_tipo_sustentavel values 
+(1, 1),
+(1, 2),
+(2, 2),
+(2, 6),
+(3, 1),
+(4, 2),
+(4, 4),
+(5, 3),
+(5, 4),
+(6, 10),
+(7, 9),
+(7, 2),
+(8, 4),
+(8, 3),
+(9, 3),
+(9, 7),
+(10, 1),
+(10, 4),
+(11, 9),
+(11, 6),
+(12, 1),
+(13, 1),
+(13, 6),
+(14, 2),
+(14, 3),
+(15, 4),
+(15, 2),
+(16, 3),
+(16, 7),
+(17, 7),
+(17, 6),
+(18, 7),
+(18, 9),
+(19, 1),
+(20, 4),
+(20, 7);
+
+
+## INSERT INTO Tabela Carrinho
+
+insert into carrinho values
+(default, '2025-07-01 09:15:23', 'Ativo'),
+(default, '2025-07-01 10:02:47', 'Ativo'),
+(default, '2025-07-01 11:20:15', 'Finalizado'),
+(default, '2025-07-01 12:05:33', 'Ativo'),
+(default, '2025-07-01 13:45:50', 'Excluído'),
+(default, '2025-07-01 14:30:10', 'Ativo'),
+(default, '2025-07-01 15:55:02', 'Finalizado'),
+(default, '2025-07-01 16:40:27', 'Ativo'),
+(default, '2025-07-01 17:22:11', 'Finalizado'),
+(default, '2025-07-01 18:10:45', 'Ativo'),
+(default, '2025-07-02 08:05:19', 'Ativo'),
+(default, '2025-07-02 09:47:56', 'Finalizado'),
+(default, '2025-07-02 10:33:08', 'Ativo'),
+(default, '2025-07-02 11:15:42', 'Excluído'),
+(default, '2025-07-02 12:50:30', 'Ativo'),
+(default, '2025-07-02 13:37:14', 'Finalizado'),
+(default, '2025-07-02 14:20:59', 'Ativo'),
+(default, '2025-07-02 15:05:36', 'Excluído'),
+(default, '2025-07-02 16:48:21', 'Ativo'),
+(default, '2025-07-02 17:30:55', 'Finalizado');
+
+
+## INSERT INTO Tabela Cliente_cria_Carrinho
+
+insert into cliente_cria_carrinho values
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 4),
+(5, 5),
+(6, 6),
+(7, 7),
+(8, 8),
+(9, 9),
+(10, 10),
+(11, 11),
+(12, 12),
+(13, 13),
+(14, 14),
+(15, 15),
+(16, 16),
+(17, 17),
+(18, 18),
+(19, 19),
+(20, 20);
