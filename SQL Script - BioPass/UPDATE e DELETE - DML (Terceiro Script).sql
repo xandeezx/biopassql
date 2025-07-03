@@ -15,6 +15,6 @@ DELETE FROM usuarioConteudo WHERE Usuario_idUsuario = 4 AND ConteudoEducativo_id
 DELETE FROM feedback WHERE idFeedback = 6;
 DELETE FROM produto_possui_categoria WHERE Produto_idProduto = 3 AND Categoria_idCategoria = 2;
 DELETE FROM produto_possui_tiposustentavel WHERE Produto_idProduto = 2 AND TipoSustentavel_idTipoSustentavel = 1;
-DELETE FROM conteudoeducativo WHERE idConteudoEducativo = 5;
+DELETE FROM usuario WHERE Usuario_idUsuario = 8;
 DELETE FROM loja WHERE idLoja = 8;
 DELETE FROM endereco WHERE Usuario_idUsuario = 10;
