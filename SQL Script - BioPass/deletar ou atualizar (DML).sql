@@ -1,4 +1,4 @@
-UPDATE produto SET preco = 24,90 WHERE idProduto = 1;
+UPDATE produto SET preco = 24.90 WHERE idProduto = 1;
 UPDATE usuario SET nome = "Lucas Souza" WHERE idUsuario = 1;
 UPDATE endereco SET cidade = "Jaboatão" WHERE Usuario_idUsuario = 2;
 UPDATE carrinho SET statusCarrinho = "Finalizado" WHERE idCarrinho = 3;
